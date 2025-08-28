@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S. Vetrivel Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 5px;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #1abc9c;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #2c3e50;
+      border-left: 5px solid #1abc9c;
+      padding-left: 10px;
+    }
+    .about, .contact, .social {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+    .contact p, .social p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+    .social a {
+      display: inline-block;
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #34495e;
+      transition: 0.3s;
+    }
+    .social a:hover {
+      color: #1abc9c;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>S. VETRIVEL</h1>
+    <p>BCA - 2nd Year Student</p>
+  </header>  <nav>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#social">Social</a>
+  </nav>  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I am <b>S. Vetrivel</b>, a passionate 2nd year BCA student. I am interested in web development, programming, and building creative digital solutions. I enjoy learning new technologies and applying them to real-life projects.</p>
+  </section>  <section id="contact" class="contact">
+    <h2>Contact Details</h2>
+    <p><b>Email:</b> <a href="mailto:vvel95147@gmail.com">vvel95147@gmail.com</a></p>
+    <p><b>Phone:</b> <a href="tel:6381053901">6381053901</a></p>
+  </section>  <section id="social" class="social">
+    <h2>Social Media</h2>
+    <p><b>Instagram:</b> <a href="https://www.instagram.com/vetri_official_1435" target="_blank">@vetri_official_1435</a></p>
+  </section>  <footer>
+    <p>&copy; 2025 S. Vetrivel | Portfolio Website</p>
+  </footer>  <script>
+    // Smooth scroll effect for nav links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script></body>
+</html>
