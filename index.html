@@ -1,120 +1,123 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>S. VETRIVEL | BCA Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S. Vetrivel Portfolio</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
+    :root {
+      --main-bg: #f3f7fa;
+      --accent: #223355;
+      --highlight: #ffa200;
+      --radius: 10px;
     }
-    body {
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
+    * {margin:0;padding:0;box-sizing:border-box}
+    body {font-family:'Segoe UI',Arial,sans-serif;background:var(--main-bg);color:#222;}
+    .container {max-width:900px;margin:0 auto;padding:24px;}
+    header {background:var(--accent);color:#fff;}
+    nav {background:var(--accent);}
+    nav .container {display:flex;justify-content:space-between;align-items:center}
+    .logo {font-size:1.5rem;letter-spacing:1.5px;}
+    nav ul {list-style:none;display:flex;}
+    nav ul li {margin-left:20px;}
+    nav ul li a {color:#fff;text-decoration:none;font-weight:600;transition:.2s;}
+    nav ul li a:hover {color:var(--highlight);}
+    .hero {padding: 48px 0 32px 0; text-align:center;}
+    .hero h2 {font-size:2.1rem;margin-bottom:12px;}
+    .hero span {font-size:1rem;color:var(--highlight);}
+    .about-section,
+    .education-section,
+    .contact-section {background:#fff;margin-top:28px;border-radius:var(--radius);box-shadow:0 2px 12px rgba(34,51,85,0.07);padding:32px 0;}
+    section h2 {color:var(--accent);margin-bottom:8px;font-size:1.55rem;}
+    .contact-section ul {list-style:none;margin-bottom:14px;}
+    .contact-section ul li {margin-bottom:7px;}
+    .contact-section form {display:flex;flex-direction:column;max-width:400px;margin:0 auto;}
+    .contact-section input, .contact-section textarea {
+      padding:10px;border:1px solid #ccd;border-radius:5px;margin-bottom:12px;font-size:1rem;
     }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 20px 0;
-      text-align: center;
+    .contact-section button {
+      padding:10px 0;background:var(--accent);color:#fff;border:none;border-radius:5px;font-size:1rem;font-weight:700;cursor:pointer;
+      transition: background .2s;
     }
-    header h1 {
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 5px;
-    }
-    nav {
-      background: #34495e;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #1abc9c;
-    }
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-    section h2 {
-      margin-bottom: 20px;
-      font-size: 2rem;
-      color: #2c3e50;
-      border-left: 5px solid #1abc9c;
-      padding-left: 10px;
-    }
-    .about, .contact, .social {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-    }
-    .contact p, .social p {
-      font-size: 1.1rem;
-      margin: 10px 0;
-    }
-    .social a {
-      display: inline-block;
-      margin-right: 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #34495e;
-      transition: 0.3s;
-    }
-    .social a:hover {
-      color: #1abc9c;
-    }
-    footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
+    .contact-section button:hover {background: var(--highlight); color: var(--accent);}
+    #formStatus {margin-left:8px;font-size:.95rem;}
+    footer {background:var(--accent);color:#fff;text-align:center;padding:16px 0;margin-top:28px;font-size:1rem;border-radius:0 0 8px 8px;}
+    @media (max-width:600px){
+      .container{padding:10px;}
+      nav .container{flex-direction:column;align-items:flex-start;}
+      nav ul {flex-direction:column;width:100%;}
+      nav ul li {margin:8px 0 0 0;}
+      .hero h2 {font-size:1.25rem;}
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>S. VETRIVEL</h1>
-    <p>BCA - 2nd Year Student</p>
-  </header>  <nav>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="#social">Social</a>
-  </nav>  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hello! I am <b>S. Vetrivel</b>, a passionate 2nd year BCA student. I am interested in web development, programming, and building creative digital solutions. I enjoy learning new technologies and applying them to real-life projects.</p>
-  </section>  <section id="contact" class="contact">
-    <h2>Contact Details</h2>
-    <p><b>Email:</b> <a href="mailto:vvel95147@gmail.com">vvel95147@gmail.com</a></p>
-    <p><b>Phone:</b> <a href="tel:6381053901">6381053901</a></p>
-  </section>  <section id="social" class="social">
-    <h2>Social Media</h2>
-    <p><b>Instagram:</b> <a href="https://www.instagram.com/vetri_official_1435" target="_blank">@vetri_official_1435</a></p>
-  </section>  <footer>
-    <p>&copy; 2025 S. Vetrivel | Portfolio Website</p>
-  </footer>  <script>
-    // Smooth scroll effect for nav links
-    document.querySelectorAll('nav a').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
+    <nav>
+      <div class="container">
+        <h1 class="logo">S. VETRIVEL</h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="container">
+        <h2>BCA Student <span>| 2nd Year</span></h2>
+        <p>Welcome to my professional portfolio website!</p>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hi, I'm <strong>S. VETRIVEL</strong>, a passionate BCA student. I love programming, web development, and learning new technologies. Always eager to collaborate on exciting projects!</p>
+      </div>
+    </section>
+    <section id="education" class="education-section">
+      <div class="container">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <strong>Bachelor of Computer Applications (BCA)</strong> - 2nd Year
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <ul>
+          <li>Email: <a href="mailto:vvel95147@fmail.com">vvel95147@fmail.com</a></li>
+          <li>Phone: <a href="tel:6381053901">6381053901</a></li>
+        </ul>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+          <span id="formStatus"></span>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 S. VETRIVEL | BCA Portfolio</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit',function(e){
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.textContent = 'Message sent! (Demo only)';
+      status.style.color = "#28a745";
+      setTimeout(()=>{status.textContent='';},2200);
+      this.reset();
     });
-  </script></body>
+  </script>
+</body>
 </html>
